@@ -11,6 +11,20 @@
 |
 */
 
+
+//Route::resource('teste', 'TesteController');
+//Route::resource('teste','TesteRestController');
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('laravel/public/upload', ['as' => 'file.upload', 'uses' => 'HomeController@upload']);
+
+
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

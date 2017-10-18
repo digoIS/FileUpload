@@ -11,6 +11,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        $this->call(UsersTableSeeder::class);
+    }
+    
+}
+
+class UsersTableSeeder extends Seeder{
+    public function run(){
+        $user = new App\User();
+        $user->name = 'Diego Ferreira Garcia';
+        $user->email = 'diego@email.com';
+        $user->password = bcrypt('123456');
+        $user->save();
     }
 }

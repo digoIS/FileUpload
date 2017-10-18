@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    O Diego instala o Laravel
                 </div>
 
                 <div class="links">
