@@ -28,3 +28,7 @@ Route::post('laravel/public/upload', ['as' => 'file.upload', 'uses' => 'HomeCont
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

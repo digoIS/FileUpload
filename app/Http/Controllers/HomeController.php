@@ -25,9 +25,10 @@ class HomeController extends Controller
     {
         return view('home');
     }
-     public function upload()
+    
+    public function upload()
     {
-         dd(\Request::all());
+         //dd(\Request::all());
          $file = \Request::file('file');
          $userId = \Request::get('userid');
          $storagePath = storage_path().'/arquivos/'.$userId;

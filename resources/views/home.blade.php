@@ -37,7 +37,6 @@
     </div>
 </div>
 @endsection
-
 @section('scripts')
 @parent
 <script>
@@ -52,7 +51,6 @@
                 formData: {
                     _token: $fileupload.data('token'),
                     userid: $fileupload.data('userId'),
-                    filename: $fileupload.data
                 },
                 done: function (e, data) {
                     $.each(data.result.files, function (index, file) {
